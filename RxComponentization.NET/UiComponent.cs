@@ -7,5 +7,7 @@ namespace RxComponentization.NET
     {
         public abstract int ContainerId { get; }
         public abstract IObservable<UiEvent> UiEvents { get; }
+
+        public abstract void StateEventReceived(StateEvent stateEvent);
     }
 }
