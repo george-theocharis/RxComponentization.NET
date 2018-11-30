@@ -24,7 +24,10 @@ namespace SampleApp.Components.ResultsComponent
         public override void StateEventReceived(StateEvent stateEvent)
         {
             if (stateEvent is ResultState<IEnumerable<Post>> results)
+            {
+                resultsView.Bind(results.Results);
                 resultsView.Show();
+            }
             else
                 resultsView.Hide();
         }

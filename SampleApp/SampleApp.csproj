@@ -61,6 +61,7 @@
     <Compile Include="Components\ErrorComponent\ErrorView.cs" />
     <Compile Include="Components\LoadingComponent\LoadingComponent.cs" />
     <Compile Include="Components\LoadingComponent\LoadingView.cs" />
+    <Compile Include="Components\ResultsComponent\PostAdapter.cs" />
     <Compile Include="Components\ResultsComponent\ResultsComponent.cs" />
     <Compile Include="Components\ResultsComponent\ResultsView.cs" />
     <Compile Include="Events\ErrorClicked.cs" />
@@ -139,6 +140,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\results.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\post.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
